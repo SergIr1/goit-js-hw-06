@@ -1,0 +1,16 @@
+.card-set {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.card-set__gallary{
+    display: block;
+    height: 100%;
+}
