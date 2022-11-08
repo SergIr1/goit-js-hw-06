@@ -15,11 +15,16 @@ function onloginFormSubmit(event) {
     return alert("Все поля должны быть заполнены.");
       }
   
-  const formData = new FormData(event.currentTarget);
+  // const formData = new FormData(event.currentTarget);
 
-   formData.forEach((password, email) => {
-    console.log(`${email}: ${password}`);
-  });
+  // formData.forEach((password, email) => {
+  //   console.log({password, email});
+  //  });
+  
+  const user = {};
+    user.email = email.value;
+    user.password = password.value;
+    console.log(user);
 
   event.currentTarget.reset();
 };
