@@ -10,7 +10,7 @@ const refs = {
 
 const changeBodyBgrColor = (event) => {
   refs.body.style.backgroundColor = getRandomHexColor();
-  refs.span.textContent = getRandomHexColor();
+  refs.span.textContent = refs.body.style.backgroundColor;
 };
 
 refs.btn.addEventListener('click', changeBodyBgrColor);
