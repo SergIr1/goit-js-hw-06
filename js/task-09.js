@@ -9,11 +9,8 @@ const refs = {
 };
 
 const changeBodyBgrColor = (event) => {
-  
-  const color = getRandomHexColor(event);
-
-  refs.body.style.backgroundColor = color;
-  refs.span.textContent = color;
+  refs.body.style.backgroundColor = getRandomHexColor(event);
+  refs.span.textContent = getRandomHexColor(event);
 
 };
 
