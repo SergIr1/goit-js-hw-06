@@ -15,7 +15,7 @@ let height = 30;
 
 const createBoxes = (amount) => {
   
-    amount = refs.input.value;
+  amount = refs.input.value;
 
     const newDivEL = document.createElement('div');
     newDivEL.style.width = `${width +=amount * step}px`;
